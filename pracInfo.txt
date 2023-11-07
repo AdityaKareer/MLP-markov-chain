@@ -1,0 +1,94 @@
+https://drive.google.com/drive/u/0/folders/1TkzRrvTl4laeiyTs780eY2u3u9YZhhKJ
+
+
+
+Practical 2
+
+1)get repo key of jenkins from jekins website
+2) sudo apt update
+3) sudo apt install jenkins
+4) sudo systemctl start jenkins.service 
+5)Sudo systemctl status jenkins 
+
+
+firewall access
+
+1)Sudo ufw allow 8080 //default
+2)Sudo ufw allow OpenSSH 
+3)Sudo ufw enable 
+
+http://your_server_ip_or_domain:8080 
+
+intial login code
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword 
+
+
+
+
+shell code
+﻿
+
+Aditya@UbuntuLinux: $ gedit firstscript.sh 
+Aditya@UbuntuLinux: $ ./firstscript.sh
+bash: ./firstscript.sh: Permission denied 
+Aditya@UbuntuLinux: $ chmod -v +x firstscript.sh
+mode of 'firstscript.sh' changed from 0664 (rw-rw-r--) to 0775 (rwxrwxr-x) 
+Aditya@UbuntuLinux: $ ./firstscript.sh
+hello world
+Aditya@Ubuntu Linux: $
+
+
+#!/bin/bash
+echo "Hello, World!"
+
+chmod +x hello-world.sh
+
+to run 
+./hello-world.sh
+
+
+
+https://drive.google.com/drive/u/0/folders/1TkzRrvTl4laeiyTs780eY2u3u9YZhhKJ
+
+& save as
+firstscript
+gedit and write your script. -V + X. firstscript.sh.
+chmod
+Run the script./firstscript sh hello worldsta
+Go to Jenkins, Home,
+New item
+freestyle proj
+1/2
+Add build step Execute shel a 202 Nello woth abus
+Step 5
+Copy
+the
+path
+and paste in
+workspacedes
+223
+Step 6
+click on
+save
+click on build
+#!/bin/bash
+(2412558 amecho
+66
+Hello world. I",
+Script
+for creating pipeline is to it shoro
+Step 1
+a
+0
+8
+Go to
+Jenkins Home
+New item pipeline ok
+(debinth sect
+Choose pipeline script from drop down, select hello world (right upper corner)
+then
+Click build now from the sidebar
+Now
+You
+can
+see pipeline.
